@@ -13,7 +13,13 @@ flutter drive \
 
 The results will be saved in the `build` directory. Open `iconfont.timeline_summary.json` and `svg.timeline_summary.json` to compare the performance metrics.
 
+## Results
+
 To view the results I measured on my Macbook M4 Pro, open the `create_report/metrics` folder.
+
+[create_report/metrics/svg_20_icons.png](create_report/metrics/svg_20_icons.png)
+
+[create_report/metrics/iconfont_20_icons.png](create_report/metrics/iconfont_20_icons.png)
 
 ## How this benchmark works
 
