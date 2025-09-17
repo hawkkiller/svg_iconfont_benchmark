@@ -17,12 +17,12 @@ The results will be saved in the `build` directory. Open `iconfont.timeline_summ
 
 To view the results I measured on my Macbook M4 Pro, open the `create_report/metrics` folder.
 
-![20 Icons](create_report/metrics/20icons/rasterizer_comparison_20icons.png)
-![200 Icons](create_report/metrics/200icons/rasterizer_comparison_200icons.png)
+![20 Icons](create_report/metrics/icons_20/rasterizer_comparison_icons_20.png)
+![2000 Icons](create_report/metrics/icons_2000/rasterizer_comparison_icons_2000.png)
 
 ## How this benchmark works
 
-There are 20 icons that are displayed in a grid view with X items (10 columns). The icons are repeated to fill the grid. The performance is measured by scrolling the grid view.
+There are 20 and 2000 icons that are displayed in a grid view with X items (25 columns). The icons are repeated to fill the grid. The performance is measured by scrolling the grid view.
 
 - SVG icons are loaded from assets using `flutter_svg` package.
 - Iconfont icons are loaded from a custom icon font created by `icon_font_generator` package.

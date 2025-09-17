@@ -9,6 +9,16 @@
 // ignore_for_file: type=lint
 // ignore_for_file: deprecated_member_use,directives_ordering,implicit_dynamic_list_literal,unnecessary_import
 
+class $AssetsIconfontGen {
+  const $AssetsIconfontGen();
+
+  /// File path: assets/iconfont/Symbols.otf
+  String get symbols => 'assets/iconfont/Symbols.otf';
+
+  /// List of all assets
+  List<String> get values => [symbols];
+}
+
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
@@ -89,8 +99,90 @@ class $AssetsIconsGen {
   ];
 }
 
+class $AssetsIconsVecGen {
+  const $AssetsIconsVecGen();
+
+  /// File path: assets/icons_vec/arrow_back.svg.vec
+  String get arrowBackSvg => 'assets/icons_vec/arrow_back.svg.vec';
+
+  /// File path: assets/icons_vec/arrow_back_ios.svg.vec
+  String get arrowBackIosSvg => 'assets/icons_vec/arrow_back_ios.svg.vec';
+
+  /// File path: assets/icons_vec/arrow_drop_down.svg.vec
+  String get arrowDropDownSvg => 'assets/icons_vec/arrow_drop_down.svg.vec';
+
+  /// File path: assets/icons_vec/arrow_forward.svg.vec
+  String get arrowForwardSvg => 'assets/icons_vec/arrow_forward.svg.vec';
+
+  /// File path: assets/icons_vec/arrow_forward_ios.svg.vec
+  String get arrowForwardIosSvg => 'assets/icons_vec/arrow_forward_ios.svg.vec';
+
+  /// File path: assets/icons_vec/check.svg.vec
+  String get checkSvg => 'assets/icons_vec/check.svg.vec';
+
+  /// File path: assets/icons_vec/check_box.svg.vec
+  String get checkBoxSvg => 'assets/icons_vec/check_box.svg.vec';
+
+  /// File path: assets/icons_vec/check_circle.svg.vec
+  String get checkCircleSvg => 'assets/icons_vec/check_circle.svg.vec';
+
+  /// File path: assets/icons_vec/chevron_right.svg.vec
+  String get chevronRightSvg => 'assets/icons_vec/chevron_right.svg.vec';
+
+  /// File path: assets/icons_vec/close.svg.vec
+  String get closeSvg => 'assets/icons_vec/close.svg.vec';
+
+  /// File path: assets/icons_vec/delete.svg.vec
+  String get deleteSvg => 'assets/icons_vec/delete.svg.vec';
+
+  /// File path: assets/icons_vec/home.svg.vec
+  String get homeSvg => 'assets/icons_vec/home.svg.vec';
+
+  /// File path: assets/icons_vec/logout.svg.vec
+  String get logoutSvg => 'assets/icons_vec/logout.svg.vec';
+
+  /// File path: assets/icons_vec/menu.svg.vec
+  String get menuSvg => 'assets/icons_vec/menu.svg.vec';
+
+  /// File path: assets/icons_vec/more_vert.svg.vec
+  String get moreVertSvg => 'assets/icons_vec/more_vert.svg.vec';
+
+  /// File path: assets/icons_vec/search.svg.vec
+  String get searchSvg => 'assets/icons_vec/search.svg.vec';
+
+  /// File path: assets/icons_vec/settings.svg.vec
+  String get settingsSvg => 'assets/icons_vec/settings.svg.vec';
+
+  /// File path: assets/icons_vec/star.svg.vec
+  String get starSvg => 'assets/icons_vec/star.svg.vec';
+
+  /// List of all assets
+  List<String> get values => [
+    arrowBackSvg,
+    arrowBackIosSvg,
+    arrowDropDownSvg,
+    arrowForwardSvg,
+    arrowForwardIosSvg,
+    checkSvg,
+    checkBoxSvg,
+    checkCircleSvg,
+    chevronRightSvg,
+    closeSvg,
+    deleteSvg,
+    homeSvg,
+    logoutSvg,
+    menuSvg,
+    moreVertSvg,
+    searchSvg,
+    settingsSvg,
+    starSvg,
+  ];
+}
+
 class Assets {
   const Assets._();
 
+  static const $AssetsIconfontGen iconfont = $AssetsIconfontGen();
   static const $AssetsIconsGen icons = $AssetsIconsGen();
+  static const $AssetsIconsVecGen iconsVec = $AssetsIconsVecGen();
 }

@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:svg_benchmark/icons/symbols.dart';
 
 class IconFontScreen extends StatelessWidget {
-  const IconFontScreen({super.key});
+  const IconFontScreen({super.key, this.itemCount = 20});
+
+  final int itemCount;
 
   static const allSymbols = <IconData>[
     Symbols.search,
@@ -30,8 +32,8 @@ class IconFontScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Icon Font Benchmark')),
       body: GridView.builder(
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 10),
-        itemCount: 20,
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 25),
+        itemCount: itemCount,
         itemBuilder: (context, index) {
           final symbol = allSymbols[index % allSymbols.length];
 

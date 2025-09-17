@@ -4,7 +4,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:svg_benchmark/gen/assets.gen.dart';
 
 class SvgScreen extends StatelessWidget {
-  const SvgScreen({super.key});
+  const SvgScreen({super.key, this.itemCount = 20});
+
+  final int itemCount;
 
   static final allIcons = <String>[
     Assets.icons.arrowBack,
@@ -32,10 +34,19 @@ class SvgScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('SVG Benchmark')),
       body: GridView.builder(
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 10),
-        itemCount: 20,
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 25,
+        ),
+        itemCount: itemCount,
         itemBuilder: (context, index) {
-          return SvgPicture.asset(allIcons[index % allIcons.length]);
+          return Center(
+            child: SvgPicture.asset(
+              allIcons[index % allIcons.length],
+              width: 24,
+              height: 24,
+              colorFilter: const ColorFilter.mode(Colors.black, BlendMode.srcIn),
+            ),
+          );
         },
       ),
     );

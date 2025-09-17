@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_svg: ^2.2.1
+  vector_graphics: ^1.1.19
 
 dev_dependencies:
   flutter_test:
@@ -25,6 +26,7 @@ flutter:
   assets:
     - assets/icons/
     - assets/iconfont/
+    - assets/icons_vec/
 
   fonts:
     - family: Symbols
