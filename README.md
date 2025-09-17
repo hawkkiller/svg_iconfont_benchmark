@@ -17,9 +17,9 @@ The results will be saved in the `build` directory. Open `iconfont.timeline_summ
 
 To view the results I measured on my Macbook M4 Pro, open the `create_report/metrics` folder.
 
-[create_report/metrics/svg_20_icons.png](create_report/metrics/svg_20_icons.png)
+![SVG 20 Icons](create_report/metrics/svg_20_icons.png)
 
-[create_report/metrics/iconfont_20_icons.png](create_report/metrics/iconfont_20_icons.png)
+![Iconfont 20 Icons](create_report/metrics/iconfont_20_icons.png)
 
 ## How this benchmark works
 
