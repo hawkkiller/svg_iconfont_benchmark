@@ -15,7 +15,7 @@ import 'package:flutter/widgets.dart';
 /// project's `pubspec.yaml` file in the `fonts` section. This ensures that
 /// the "Symbols" font is included in your application. This font is used to
 /// display the icons. For example:
-/// 
+///
 /// ```yaml
 /// flutter:
 ///   fonts:
@@ -46,7 +46,10 @@ class Symbols {
   /// Font icon named "__arrow_back__"
   ///
   /// <image width='32px' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIyNHB4IiBmaWxsPSIjZTNlM2UzIj48cGF0aCBkPSJtMzEzLTQ0MCAyMjQgMjI0LTU3IDU2LTMyMC0zMjAgMzIwLTMyMCA1NyA1Ni0yMjQgMjI0aDQ4N3Y4MEgzMTNaIi8+PC9zdmc+'>
-  static const IconData arrowBack = IconData(0xe003, fontFamily: iconFontFamily);
+  static const IconData arrowBack = IconData(
+    0xe003,
+    fontFamily: iconFontFamily,
+  );
 
   /// Font icon named "__settings__"
   ///
@@ -56,7 +59,10 @@ class Symbols {
   /// Font icon named "__chevron_right__"
   ///
   /// <image width='32px' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIyNHB4IiBmaWxsPSIjZTNlM2UzIj48cGF0aCBkPSJNNTA0LTQ4MCAzMjAtNjY0bDU2LTU2IDI0MCAyNDAtMjQwIDI0MC01Ni01NiAxODQtMTg0WiIvPjwvc3ZnPg=='>
-  static const IconData chevronRight = IconData(0xe005, fontFamily: iconFontFamily);
+  static const IconData chevronRight = IconData(
+    0xe005,
+    fontFamily: iconFontFamily,
+  );
 
   /// Font icon named "__check__"
   ///
@@ -71,12 +77,18 @@ class Symbols {
   /// Font icon named "__check_circle__"
   ///
   /// <image width='32px' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIyNHB4IiBmaWxsPSIjZTNlM2UzIj48cGF0aCBkPSJtNDI0LTI5NiAyODItMjgyLTU2LTU2LTIyNiAyMjYtMTE0LTExNC01NiA1NiAxNzAgMTcwWm01NiAyMTZxLTgzIDAtMTU2LTMxLjVUMTk3LTE5N3EtNTQtNTQtODUuNS0xMjdUODAtNDgwcTAtODMgMzEuNS0xNTZUMTk3LTc2M3E1NC01NCAxMjctODUuNVQ0ODAtODgwcTgzIDAgMTU2IDMxLjVUNzYzLTc2M3E1NCA1NCA4NS41IDEyN1Q4ODAtNDgwcTAgODMtMzEuNSAxNTZUNzYzLTE5N3EtNTQgNTQtMTI3IDg1LjVUNDgwLTgwWm0wLTgwcTEzNCAwIDIyNy05M3Q5My0yMjdxMC0xMzQtOTMtMjI3dC0yMjctOTNxLTEzNCAwLTIyNyA5M3QtOTMgMjI3cTAgMTM0IDkzIDIyN3QyMjcgOTNabTAtMzIwWiIvPjwvc3ZnPg=='>
-  static const IconData checkCircle = IconData(0xe008, fontFamily: iconFontFamily);
+  static const IconData checkCircle = IconData(
+    0xe008,
+    fontFamily: iconFontFamily,
+  );
 
   /// Font icon named "__arrow_drop_down__"
   ///
   /// <image width='32px' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIyNHB4IiBmaWxsPSIjZTNlM2UzIj48cGF0aCBkPSJNNDgwLTM2MCAyODAtNTYwaDQwMEw0ODAtMzYwWiIvPjwvc3ZnPg=='>
-  static const IconData arrowDropDown = IconData(0xe009, fontFamily: iconFontFamily);
+  static const IconData arrowDropDown = IconData(
+    0xe009,
+    fontFamily: iconFontFamily,
+  );
 
   /// Font icon named "__star__"
   ///
@@ -86,7 +98,10 @@ class Symbols {
   /// Font icon named "__arrow_back_ios__"
   ///
   /// <image width='32px' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIyNHB4IiBmaWxsPSIjZTNlM2UzIj48cGF0aCBkPSJNNDAwLTgwIDAtNDgwbDQwMC00MDAgNzEgNzEtMzI5IDMyOSAzMjkgMzI5LTcxIDcxWiIvPjwvc3ZnPg=='>
-  static const IconData arrowBackIos = IconData(0xe00b, fontFamily: iconFontFamily);
+  static const IconData arrowBackIos = IconData(
+    0xe00b,
+    fontFamily: iconFontFamily,
+  );
 
   /// Font icon named "__delete__"
   ///
@@ -101,7 +116,10 @@ class Symbols {
   /// Font icon named "__arrow_forward__"
   ///
   /// <image width='32px' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIyNHB4IiBmaWxsPSIjZTNlM2UzIj48cGF0aCBkPSJNNjQ3LTQ0MEgxNjB2LTgwaDQ4N0w0MjMtNzQ0bDU3LTU2IDMyMCAzMjAtMzIwIDMyMC01Ny01NiAyMjQtMjI0WiIvPjwvc3ZnPg=='>
-  static const IconData arrowForward = IconData(0xe00e, fontFamily: iconFontFamily);
+  static const IconData arrowForward = IconData(
+    0xe00e,
+    fontFamily: iconFontFamily,
+  );
 
   /// Font icon named "__more_vert__"
   ///
@@ -116,5 +134,8 @@ class Symbols {
   /// Font icon named "__arrow_forward_ios__"
   ///
   /// <image width='32px' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHdpZHRoPSIyNHB4IiBmaWxsPSIjZTNlM2UzIj48cGF0aCBkPSJtMzIxLTgwLTcxLTcxIDMyOS0zMjktMzI5LTMyOSA3MS03MSA0MDAgNDAwTDMyMS04MFoiLz48L3N2Zz4='>
-  static const IconData arrowForwardIos = IconData(0xe011, fontFamily: iconFontFamily);
+  static const IconData arrowForwardIos = IconData(
+    0xe011,
+    fontFamily: iconFontFamily,
+  );
 }

@@ -32,12 +32,21 @@ class IconFontScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Icon Font Benchmark')),
       body: GridView.builder(
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 25),
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 10,
+        ),
         itemCount: itemCount,
         itemBuilder: (context, index) {
+          final cycle = index ~/ allSymbols.length;
+          final color = HSVColor.fromAHSV(
+            1.0,
+            (cycle * 30.0) % 360.0,
+            1.0,
+            1.0,
+          ).toColor();
           final symbol = allSymbols[index % allSymbols.length];
 
-          return Icon(symbol);
+          return Icon(symbol, size: 24, color: color);
         },
       ),
     );

@@ -32,19 +32,27 @@ class SvgVecScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('SVG Benchmark')),
+      appBar: AppBar(title: const Text('SVG compiled Benchmark')),
       body: GridView.builder(
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 25,
+          crossAxisCount: 10,
         ),
         itemCount: itemCount,
         itemBuilder: (context, index) {
+          final cycle = index ~/ allIcons.length;
+          final color = HSVColor.fromAHSV(
+            1.0,
+            (cycle * 30.0) % 360.0,
+            1.0,
+            1.0,
+          ).toColor();
+
           return Center(
             child: SvgPicture(
               AssetBytesLoader(allIcons[index % allIcons.length]),
               width: 24,
               height: 24,
-              colorFilter: const ColorFilter.mode(Colors.black, BlendMode.srcIn),
+              colorFilter: ColorFilter.mode(color, BlendMode.srcIn),
             ),
           );
         },
